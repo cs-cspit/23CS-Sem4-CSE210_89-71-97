@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="../common/css/animate.min.css">
+    <link rel="stylesheet" href="../common/css/bootstrap.min.css">
+    <!-- JS Links -->
+    <script src="../common/js/bootstrap.bundle.min.js"></script>
+    <script src="../common/js/sweetalert.min.js"></script>
+</head>
+<body>
+    <div class="side-nav">
+        <div class="profile-pic"></div>
+        <ul class="list-group">
+            <li class="list-group-item"><i class="fa fa-home"></i> Home</li>
+            <li class="list-group-item"><i class="fa fa-home"></i> Home</li>
+            <li class="list-group-item"><i class="fa fa-home"></i> Home</li>
+            <li class="list-group-item"><i class="fa fa-home"></i> Home</li>
+            <li class="list-group-item"><i class="fa fa-home"></i> Home</li>
+        </ul>
+        <button id="logout-btn">Logout</button>
+    </div>
+    
+    <div class="container-fluid main-box">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-10 mt-1 p-0">
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <h1>Welcome to QuizWhiz</h1>
+                    </li>
+                </ul>
+                
+                <!-- Statistics Section -->
+                <div class="row mt-3">
+                    <div class="col-md-4 text-center">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <h4>Teachers</h4>
+                            </li>
+                        </ul>
+                        <div class="content-box">
+                            <div class="number-box">
+                                <h5>200</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <h4>Students</h4>
+                            </li>
+                        </ul>
+                        <div class="content-box">
+                            <div class="number-box">
+                                <h5>2000</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <h4>Subjects</h4>
+                            </li>
+                        </ul>
+                        <div class="content-box">
+                            <div class="number-box">
+                                <h5>8</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Create Subject Section -->
+                <div class="row mt-4">
+                    <div class="col-md-6">
+                        <ul class="list-group">
+                            <li class="list-group-item text-center">
+                                <h3>Create Subject</h3>
+                            </li>
+                        </ul>
+                        <div class="accordion" id="subjectAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#createSubject">
+                                        Create Subject
+                                    </button>
+                                </h2>
+                                <div id="createSubject" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        <form>
+                                            <input type="text" placeholder="Subject Name" class="form-control subject mb-3">
+                                            <div align="end">
+                                                <button class="btn text-white subject-btn" style="background-color: black;">Store Subject</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Create Questions Section -->
+                    <div class="col-md-6">
+                        <ul class="list-group">
+                            <li class="list-group-item text-center">
+                                <h3>Create Questions</h3>
+                            </li>
+                        </ul>
+                        <div class="accordion" id="questionAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#createQuestion">
+                                        Create Questions
+                                    </button>
+                                </h2>
+                                <div id="createQuestion" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        <form>
+                                            <select name="" id="" class="form-select mb-3">
+                                                <option value="Choose subject">Choose Subject</option>
+                                            </select>
+                                            <input type="text" placeholder="Enter Question" class="form-control mb-3">
+                                            <input type="text" placeholder="Option 1" class="form-control mb-3">
+                                            <input type="text" placeholder="Option 2" class="form-control mb-3">
+                                            <input type="text" placeholder="Option 3" class="form-control mb-3">
+                                            <input type="text" placeholder="Option 4" class="form-control mb-3">
+                                            <input type="text" placeholder="Correct Answer" class="form-control mb-3">
+                                            <div align="end">
+                                                <button class="btn text-white" style="background-color: black;">Store Question</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- New Sections: Manage Subjects & Manage Questions -->
+                <div class="row mt-4">
+                    <div class="col-md-6">
+                        <ul class="list-group">
+                            <li class="list-group-item text-center">
+                                <h3>Manage Subjects</h3>
+                            </li>
+                        </ul>
+                   <!-- Manage Subjects Section -->
+         <div class="col-md-6">
+           <ul class="list-group">
+               
+           </ul>
+    <!-- Add this div for dynamically adding subjects -->
+               <div class="list-group visible-subject">
+        <!-- Subjects will be dynamically added here -->
+               </div>
+           </div>
+
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="list-group">
+                            <li class="list-group-item text-center">
+                                <h3>Manage Questions</h3>
+                            </li>
+                        </ul>
+                        <div class="list-group">
+                            <a href="#" class="list-group-item list-group-item-action">Question 1</a>
+                            <a href="#" class="list-group-item list-group-item-action">Question 2</a>
+                            <a href="#" class="list-group-item list-group-item-action">Question 3</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

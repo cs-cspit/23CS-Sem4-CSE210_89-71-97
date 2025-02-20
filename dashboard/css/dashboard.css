@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* start side nav coding */
+
+.side-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 20px 0px;
+    flex-direction: column;
+}
+.side-nav .profile-pic{
+    width: 150px;
+    height: 150px;
+    background-image: url(../images/avtar.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+.side-nav ul{
+    width: 100%;
+    margin: 20px 0px 0px;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+}
+.side-nav ul li{
+    border-radius: 0 !important;
+    margin: 10px 0px;
+    background-color: transparent  !important;
+    font-size: 20px;
+    color: #fff;
+    transition: 0.4s ease-in-out;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+}
+.side-nav ul li:hover{
+    background-color: #fff !important;
+    color: #000;
+}
+.side-nav button{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 13px;
+    border: none;
+    background-color: #fff;
+    color: #000;
+    font-weight: bold;
+    font-size: 22px;
+    border-right: 2px solid black;
+}
+/* end side nav coding */
+
+/* start main-box coding */
+.main-box .list-group li{
+    border-radius: 0 !important;
+    background-color: aqua !important;
+}
+.teacher-header {
+    background-color: cyan;
+    text-align: center;
+    font-weight: bold;
+}
+
+.number-box {
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border: 3px solid cyan;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    font-size: 20px;
+    font-weight: bold;
+}
+.side-nav ul {
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    text-align: left;
+}
+
+.side-nav ul li {
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+}
+.accordion-button {
+    background-color: cyan !important;
+    color: black !important;
+    font-weight: bold;
+}
+
+
+
+/* end main-box coding */

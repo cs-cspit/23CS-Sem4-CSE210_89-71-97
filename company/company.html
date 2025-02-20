@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- start css link -->
+    <link rel="stylesheet" href="css/company.css    ">
+    <link rel="stylesheet" href="../common/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../common/css/animate.min.css"> <!-- link for animated box after registration -->
+    <!-- end css link -->
+    <!-- start js link -->
+    <script src="../common/js/bootstrap.bundle.min.js"></script>
+    <script src="../common/js/sweetalert.min.js"></script> <!-- link for animated box after registration -->
+    <!-- end js link -->
+    <title>Company</title>
+</head>
+<body>
+    <div class="container bg-white main-box">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand">QuizWhiz</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <div class="navbar-nav w-100 justify-content-end  ">
+                        <a href="#" class="nav-link">Home</a>
+                        <a href="#" class="nav-link">Portfolio</a>
+                        <a href="#" class="nav-link">About Us</a>  
+                        <a href="#" class="nav-link">Contact</a>
+                        <a href="#" class="nav-link btn signup-btn bg-info">Sign Up</a>
+                        <a href="#" class="nav-link d-none btn login-btn bg-info">Sign In</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="row">
+            <div class="col-md-6">
+
+                <div class="login-box active ">
+                    <h1 class="mb-3">Welcome!!</h1>
+                    <form class="login-form"> 
+                            <label for="email">E-mail</label><br>
+                            <input type="email" id="email" class="from-control mb-3 w-100" placeholder="xyz@gmail.com">
+                            <label for="username">User Name</label><br>
+                            <input type="text" id="username" class="from-control mb-3 w-100 ">
+                            <label for="password">Password</label><br>
+                            <input type="password" id="password" class="from-control mb-3 w-100">
+                        <div align="end">
+                            <a href="#">Student Login Form</a>
+                        </div>
+                        <button class="btn btn-danger signin-btn mb-3 mt-3 w-100">Sign In</button>
+                    </form>
+                </div>
+                
+                <div class="signup-box ">
+                    <form class="signup-form">
+                            <label for="s-email">E-mail</label><br>
+                            <input type="email" required id="s-email" class="from-control mb-3 w-100" placeholder="xyz@gmail.com">
+                            <label for="s-usernmae">User Name</label><br>
+                            <input type="text" required id="s-username" class="from-control mb-3 w-100 ">
+                            <label for="userid">User Id</label><br>
+                            <input type="text" required id="userid" class="from-control mb-3 w-100">
+                            <label for="branch">Branch</label><br>
+                            <input type="text" required id="branch" class="from-control mb-3 w-100">
+                            <label for="password">Department</label><br>
+                            <input type="text" required id="department" class="from-control mb-3 w-100">
+                            <label for="s-password">Password</label><br>
+                            <input type="password" required id="s-password" class="from-control mb-3 w-100">
+                        <div align="end">
+                            <a href="#">Student Login Form</a>
+                        </div>
+                        <button class="btn btn-danger s-signup-btn mb-3 mt-3 w-100">Sign Up</button>
+                    </form>
+                </div> 
+
+            </div>
+            <div class="col-md-6 d-flex align-items-center justify-content-center">
+                <img src="images/quiz-5595288_640.webp" alt="" style="max-width: 100%; height:auto;">
+            </div>
+        </div>
+    </div>
+    <script src="js/company.js"></script>
+</body>
+</html>
