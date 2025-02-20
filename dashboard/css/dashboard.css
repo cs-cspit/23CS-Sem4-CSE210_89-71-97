@@ -3,15 +3,52 @@
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+/* Flip in effect when a new page loads */
+@keyframes flipIn {
+    from {
+        transform: rotateY(90deg);
+        opacity: 0;
+    }
+    to {
+        transform: rotateY(0deg);
+        opacity: 1;
+    }
+}
+
+/* Flip out effect when leaving the page */
+@keyframes flipOut {
+    from {
+        transform: rotateY(0deg);
+        opacity: 1;
+    }
+    to {
+        transform: rotateY(-90deg);
+        opacity: 0;
+    }
+}
+
+/* Apply flip-in animation when the page loads */
+.page-transition {
+    animation: flipIn 0.6s ease-in-out;
+}
+
+/* Apply flip-out animation when navigating */
+.flip-out {
+    animation: flipOut 0.6s ease-in-out;
+}
+
 /* start side nav coding */
 
+/* body{
+    background-color: rgb(10, 25, 70);
+} */
 .side-nav{
     position: fixed;
     top: 0;
     left: 0;
     width: 250px;
     height: 100vh;
-    background-color: black;
+    background-color: #000;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -61,7 +98,8 @@
 /* start main-box coding */
 .main-box .list-group li{
     border-radius: 0 !important;
-    background-color: aqua !important;
+    background-color:  rgb(0, 35, 102) !important;
+    color: #fff;
 }
 .teacher-header {
     background-color: cyan;
@@ -96,9 +134,10 @@
     cursor: pointer;
 }
 .accordion-button {
-    background-color: cyan !important;
+    background-color: rgb(14, 121, 229) !important;
     color: black !important;
     font-weight: bold;
+    
 }
 
 
