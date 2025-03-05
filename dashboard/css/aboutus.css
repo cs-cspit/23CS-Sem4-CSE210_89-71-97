@@ -19,7 +19,7 @@ p{
     width: 90%;
     max-width: 1200px;
     padding: 40px;
-    background: linear-gradient(135deg, rgb(93, 32, 87),rgb(0, 6, 41));
+    background:rgba(255, 255, 255, 0.1); /*rgba(255, 255, 255, 0.1);*/
     border-radius: 15px;
     box-shadow: 0 0 0;
 }
