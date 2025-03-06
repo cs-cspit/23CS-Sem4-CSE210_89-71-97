@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Settings</title>
+    <link rel="stylesheet" href="tsettings.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="settings-container">
+        <h2>⚙️ Teacher Settings</h2>
+
+        <!-- Theme & Display -->
+        <h3><i class="fas fa-paint-brush icon"></i> Theme & Display</h3>
+        <div class="setting-item">
+            <span>🌙 Dark Mode</span>
+            <label class="switch">
+                <input type="checkbox" id="dark-mode-toggle">
+                <span class="slider"></span>
+            </label>
+        </div>
+
+        <div class="setting-item">
+            <span>🔠 Font Size</span>
+            <input type="range" id="font-size-slider" min="12" max="24" value="16">
+        </div>
+
+        <!-- Quiz Management -->
+        <h3><i class="fas fa-tasks icon"></i> Quiz Management</h3>
+        <div class="setting-item">
+            <span>📝 Enable Quiz Creation</span>
+            <label class="switch">
+                <input type="checkbox" id="quiz-creation-toggle">
+                <span class="slider"></span>
+            </label>
+        </div>
+        <div class="setting-item">
+            <span>⏳ Set Quiz Time Limit</span>
+            <input type="number" id="quiz-time-limit" min="1" max="180" value="30"> minutes
+        </div>
+        
+        <div class="setting-item">
+            <span>🔄 Enable Question Randomization</span>
+            <label class="switch">
+                <input type="checkbox" id="question-randomization-toggle">
+                <span class="slider"></span>
+            </label>
+        </div>
+
+        <!-- Leaderboard & Performance -->
+        <h3><i class="fas fa-chart-line icon"></i> Performance & Leaderboard</h3>
+        <div class="setting-item">
+            <span>🏆 Enable Leaderboard</span>
+            <label class="switch">
+                <input type="checkbox" id="leaderboard-toggle">
+                <span class="slider"></span>
+            </label>
+        </div>
+        <div class="setting-item">
+            <span>📊 View Student Performance Reports</span>
+            <button id="view-reports-btn">View Reports</button>
+        </div>
+    </div>
+
+    <script src="tsettings.js"></script>
+</body>
+</html>
