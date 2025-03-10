@@ -16,6 +16,7 @@ body{
     height: auto;
     border-radius:25px;
     padding: 30px;
+    background:rgba(255, 255, 255, 0.1);
     /* background: linear-gradient( rgb(93, 32, 87),rgb(0, 6, 41)); */
 }
 .main-box .navbar .navbar-brand{
@@ -43,7 +44,7 @@ body{
     padding: 0px 20px;
 }
 .main-box .login-box h1{
-    color: rgb(93, 32, 87);
+    color: #FFB200;
     font-size: 35px;
     font-family: sans-serif;
     font-weight: bold;

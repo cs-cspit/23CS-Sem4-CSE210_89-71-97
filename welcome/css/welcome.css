@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: slateblue !important;
+    background: linear-gradient(rgb(93, 32, 87), rgb(0, 6, 41)) !important;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,14 +18,34 @@ body{
     font-size: 18px;
     font-weight: bold;
 }
-.btn {
-    background-color: slateblue !important;
+/* .btn {
+    background-color: white !important;
     font-weight: bold !important;
     font-size: 18px !important;
-    color: #fff !important;
+    color: black !important;
     box-shadow: none !important;
+} */
+.btn {
+    background-color: white !important;
+    font-weight: bold !important;
+    font-size: 18px !important;
+    color: black !important;
+    box-shadow: none !important;
+    border: 2px solid black; /* Optional: To make the button more visible */
+    padding: 10px 20px; /* Adjust padding for better appearance */
+    transition: all 0.3s ease-in-out; /* Smooth transition effect */
 }
 
+.btn:hover {
+    background-color: black !important;
+    color: white !important;
+}
+
+.col-md-5{
+    background:rgba(255, 255, 255, 0.1);
+    color: white;
+    /* border-radius: 20px; */
+}
 
 
 

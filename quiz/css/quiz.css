@@ -4,15 +4,17 @@
     box-sizing: border-box;
 }
 body{
-    background-color: slateblue !important;
+    background: linear-gradient(rgb(93, 32, 87), rgb(0, 6, 41)) !important;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
 }
 .main{
-    background-color: #fff;
+    background:rgba(255, 255, 255, 0.1);
     padding: 20px;
+    color: white;
+    border-radius: 20px;
 }
 
 .main label{

@@ -15,7 +15,10 @@
 .stats-circles {
     margin-top: 20px; /* Adds space between the text and the circles */
 }
-
+a{
+    color: white;
+    text-decoration: none;
+}
 
 :root {
     /* Light Theme Variables */
@@ -871,4 +874,46 @@ p {
 .see-all:hover,
 .eye-icon:hover {
     color: #0056b3;
+}
+
+
+/* Responsive Sidebar */
+@media (max-width: 768px) {
+    .side-nav {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .nav-menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .side-nav ul {
+        padding: 10px;
+    }
+}
+
+/* Ensure table and content boxes resize properly */
+@media (max-width: 768px) {
+    .content-box {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .table-responsive {
+        overflow-x: auto;
+    }
+}
+
+/* Adjust form elements for small screens */
+@media (max-width: 576px) {
+    .registrationForm input,
+    .registrationForm select,
+    .registrationForm textarea {
+        width: 100%;
+    }
+    .btn {
+        width: 100%;
+    }
 }
